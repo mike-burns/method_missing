@@ -7,10 +7,24 @@ Gem::Specification.new do |s|
   s.version     = MethodMissing::VERSION
   s.authors     = ["Mike Burns"]
   s.email       = ["mike@mike-burns.com"]
-  s.homepage    = ""
+  s.homepage    = "http://github.com/mike-burns/method_missing"
   s.license     = 'BSD'
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.summary     = %q{Compose, sequence, and repeat Ruby methods.}
+  s.description = %q{
+    The methods on methods that you've been missing.
+
+    This gem adds the #* #/ and #^ methods so you can compose, sequence, and
+    repeat methods.
+
+    By composing methods you can express that one method calls another more
+    obviously.
+
+    By sequencing methods you can express that a series of methods have the
+    same argument more succinctly.
+
+    By repeating a method you can compose it with itself as needed, to build
+    upon itself.
+  }
 
   s.rubyforge_project = "method_missing"
 
