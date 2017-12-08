@@ -20,10 +20,10 @@ This is the classic. In algebra class you learned that `f(g(x))` can also be wri
 So in Ruby, using the method\_missing gem:
 
     def escape_everything(text)
-      everything_ecaper.call(text)
+      everything_escaper.call(text)
     end
 
-    def everything_ecaper
+    def everything_escaper
       method(:html_escape) * method(:escape_javascript) * method(:json_escape)
     end
 
@@ -86,4 +86,4 @@ To show this algebraically:
 
 Copyright
 ---------
-Copyright 2011 Mike Burns
+Copyright 2017 Mike Burns
